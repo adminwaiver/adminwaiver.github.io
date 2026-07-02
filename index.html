@@ -68,53 +68,6 @@
   .hero-svc svg { color: var(--cyan); }
   .hero-svc-label { font-size: 0.85rem; font-weight: 700; color: white; text-align: center; line-height: 1.4; }
 
-  /* ABOUT */
-  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin-top: 56px; }
-  .about-text p { color: var(--muted); line-height: 1.8; margin-bottom: 20px; }
-  .about-text strong { color: var(--cyan); }
-  .about-pillars { display: flex; flex-direction: column; gap: 16px; }
-  .pillar { display: flex; gap: 16px; align-items: flex-start; padding: 20px; border: 1px solid var(--card-border); border-radius: 8px; background: var(--card); transition: border-color 0.2s; }
-  .pillar:hover { border-color: var(--cyan); }
-  .pillar-icon { width: 36px; height: 36px; border-radius: 6px; background: rgba(0,212,255,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--cyan); }
-  .pillar-title { font-weight: 600; font-size: 0.9rem; color: white; margin-bottom: 4px; }
-  .pillar-desc { font-size: 0.85rem; color: var(--muted); }
-
-  /* SERVICES */
-  #services { background: linear-gradient(180deg, var(--navy) 0%, var(--navy2) 100%); }
-  .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 56px; }
-  .svc-card { border: 1px solid var(--card-border); border-radius: 10px; padding: 36px; background: var(--card); transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s; }
-  .svc-card:hover { border-color: var(--cyan); transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,212,255,0.1); }
-  .svc-icon { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 10px; background: rgba(0,212,255,0.08); margin-bottom: 20px; color: var(--cyan); }
-  .svc-title { font-family: 'Rajdhani', sans-serif; font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 12px; }
-  .svc-desc { color: var(--muted); font-size: 0.9rem; line-height: 1.7; }
-
-  /* VALUES */
-  .commit-header { text-align: center; margin-bottom: 56px; }
-  .commit-header .section-sub { margin: 12px auto 0; }
-  .commit-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
-  .commit-card { border: 1px solid var(--card-border); border-radius: 10px; padding: 28px 20px; text-align: center; background: var(--card); transition: all 0.25s; }
-  .commit-card:hover { border-color: var(--cyan); background: rgba(0,212,255,0.08); transform: translateY(-4px); }
-  .commit-icon { width: 52px; height: 52px; border-radius: 50%; background: rgba(0,212,255,0.1); border: 1px solid var(--card-border); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; color: var(--cyan); }
-  .commit-title { font-weight: 700; font-size: 0.9rem; color: white; margin-bottom: 8px; }
-  .commit-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
-
-  /* PROCESS */
-  #process { background: var(--navy2); }
-  .process-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 56px; position: relative; }
-  .process-steps::before { content: ''; position: absolute; top: 48px; left: calc(16.67% + 16px); right: calc(16.67% + 16px); height: 1px; background: linear-gradient(90deg, var(--cyan), transparent 50%, var(--cyan)); opacity: 0.3; }
-  .process-step { text-align: center; padding: 0 16px; }
-  .step-num { width: 72px; height: 72px; border-radius: 50%; border: 1px solid var(--cyan); display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-family: 'Rajdhani', sans-serif; font-size: 1.8rem; font-weight: 700; color: var(--cyan); background: rgba(0,212,255,0.06); box-shadow: 0 0 20px rgba(0,212,255,0.15); }
-  .step-title { font-family: 'Rajdhani', sans-serif; font-size: 1.3rem; font-weight: 700; color: white; margin-bottom: 10px; }
-  .step-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.7; }
-
-  /* CONTACT */
-  #contact { text-align: center; background: linear-gradient(180deg, var(--navy2) 0%, var(--navy) 100%); position: relative; overflow: hidden; }
-  #contact::before { content: ''; position: absolute; bottom: -100px; left: 50%; transform: translateX(-50%); width: 600px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(0,212,255,0.08) 0%, transparent 70%); }
-  .cta-title { font-family: 'Rajdhani', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; color: white; margin-bottom: 16px; position: relative; }
-  .cta-sub { color: var(--muted); margin-bottom: 40px; font-size: 1.05rem; position: relative; }
-  .cta-email { display: inline-flex; align-items: center; gap: 10px; font-size: 1.2rem; font-weight: 600; color: var(--cyan); text-decoration: none; border: 1px solid var(--card-border); padding: 16px 32px; border-radius: 8px; transition: all 0.25s; position: relative; }
-  .cta-email:hover { border-color: var(--cyan); background: rgba(0,212,255,0.06); }
-
   /* FOOTER */
   footer { border-top: 1px solid var(--card-border); padding: 32px 40px; display: flex; justify-content: space-between; align-items: center; }
   .footer-logo { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 1.1rem; }
@@ -128,11 +81,6 @@
     .nav-links, .nav-cta { display: none; }
     .hamburger { display: flex; }
     section { padding: 64px 20px; }
-    .about-grid { grid-template-columns: 1fr; gap: 40px; }
-    .services-grid { grid-template-columns: 1fr; }
-    .commit-grid { grid-template-columns: repeat(2, 1fr); }
-    .process-steps { grid-template-columns: 1fr; }
-    .process-steps::before { display: none; }
     .hero-services { flex-wrap: wrap; }
     .hero-svc { flex: 1 1 45%; border-right: none; border-bottom: 1px solid var(--card-border); }
     footer { flex-direction: column; gap: 12px; text-align: center; }
@@ -196,144 +144,9 @@
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="container">
-    <div class="section-eyebrow fade-up">Who We Are</div>
-    <h2 class="section-title fade-up">About Waiver IT Solutions</h2>
-    <div class="about-grid">
-      <div class="about-text fade-up">
-        <p>Waiver IT Solutions partners with small and medium-sized businesses to design, deploy, and support the technology that powers everyday operations and long-term growth.</p>
-        <p>We work as an extension of your team — handling everything from foundational network setup to complex enterprise migrations — so you can focus on running your business, not troubleshooting it.</p>
-        <p>Our approach blends hands-on technical delivery with clear, jargon-free communication, giving growing businesses access to <strong>enterprise-grade capability without enterprise-grade complexity.</strong></p>
-      </div>
-      <div class="about-pillars fade-up">
-        <div class="pillar">
-          <div class="pillar-icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-          <div><div class="pillar-title">Hands-On Partnership</div><div class="pillar-desc">We work alongside your team, not just for it.</div></div>
-        </div>
-        <div class="pillar">
-          <div class="pillar-icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-          <div><div class="pillar-title">Enterprise Thinking, SMB Scale</div><div class="pillar-desc">Right-sized solutions, without unnecessary complexity.</div></div>
-        </div>
-        <div class="pillar">
-          <div class="pillar-icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
-          <div><div class="pillar-title">Responsive &amp; Reliable</div><div class="pillar-desc">Support that keeps pace with your business.</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services">
-  <div class="container">
-    <div class="section-eyebrow fade-up">What We Do</div>
-    <h2 class="section-title fade-up">Our Services at a Glance</h2>
-    <p class="section-sub fade-up">Each service is available as a standalone engagement, or bundled together as your business grows.</p>
-    <div class="services-grid">
-      <div class="svc-card fade-up">
-        <div class="svc-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><rect x="2" y="2" width="8" height="5" rx="1"/><rect x="14" y="2" width="8" height="5" rx="1"/><rect x="7" y="17" width="10" height="5" rx="1"/><line x1="6" y1="4.5" x2="18" y2="4.5"/><line x1="12" y1="7" x2="12" y2="17"/><line x1="7" y1="12" x2="17" y2="12"/></svg></div>
-        <div class="svc-title">IT Setup &amp; Infrastructure</div>
-        <p class="svc-desc">We design and build the technology foundation your business runs on — from the first workstation to a fully connected office network.</p>
-      </div>
-      <div class="svc-card fade-up">
-        <div class="svc-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M12 3v10m0-10L9 6m3-3l3 3"/><path d="M6.5 14a5.5 5.5 0 1 0 11 0"/><path d="M4 17.5A7.5 7.5 0 0 0 12 22a7.5 7.5 0 0 0 8-4.5"/></svg></div>
-        <div class="svc-title">Migration &amp; Enterprise Uplift</div>
-        <p class="svc-desc">When you've outgrown your current setup, we plan and execute the move — minimising disruption while preparing you to scale.</p>
-      </div>
-      <div class="svc-card fade-up">
-        <div class="svc-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><circle cx="12" cy="10" r="7"/><path d="M8.5 13.5s1 2 3.5 2 3.5-2 3.5-2"/><circle cx="9.5" cy="9" r=".5" fill="currentColor"/><circle cx="14.5" cy="9" r=".5" fill="currentColor"/><path d="M8 20l-2 2M16 20l2 2"/></svg></div>
-        <div class="svc-title">Operational IT Support</div>
-        <p class="svc-desc">Day-to-day technology needs a steady hand. We keep small teams running with responsive, dependable support.</p>
-      </div>
-      <div class="svc-card fade-up">
-        <div class="svc-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M9 8l2 2-2 2M13 12h2"/></svg></div>
-        <div class="svc-title">Core IT Services</div>
-        <p class="svc-desc">Testing, programming and the technical groundwork behind reliable, well-built software.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- VALUES -->
-<section id="values">
-  <div class="container">
-    <div class="commit-header">
-      <div class="section-eyebrow fade-up">Our Commitment. Your Advantage.</div>
-      <h2 class="section-title fade-up">What We Stand For</h2>
-      <p class="section-sub fade-up">Five principles that guide every engagement, every decision, every day.</p>
-    </div>
-    <div class="commit-grid">
-      <div class="commit-card fade-up">
-        <div class="commit-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1M6.343 6.343l-.707-.707M3 12H2M6.343 17.657l-.707.707M12 21v1M17.657 17.657l.707.707M21 12h1M17.657 6.343l.707-.707"/><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/></svg></div>
-        <div class="commit-title">Innovation</div>
-        <p class="commit-desc">We embrace new ideas and technologies to deliver smarter, future-ready solutions.</p>
-      </div>
-      <div class="commit-card fade-up">
-        <div class="commit-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-        <div class="commit-title">Automation</div>
-        <p class="commit-desc">We streamline processes and eliminate complexity through intelligent automation.</p>
-      </div>
-      <div class="commit-card fade-up">
-        <div class="commit-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <div class="commit-title">Reliability</div>
-        <p class="commit-desc">We deliver secure, scalable and dependable solutions you can trust, always.</p>
-      </div>
-      <div class="commit-card fade-up">
-        <div class="commit-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <div class="commit-title">Partnership</div>
-        <p class="commit-desc">We work alongside you as a trusted advisor, focused on your long-term success.</p>
-      </div>
-      <div class="commit-card fade-up">
-        <div class="commit-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
-        <div class="commit-title">Excellence</div>
-        <p class="commit-desc">We are committed to exceptional service and measurable results.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section id="process">
-  <div class="container">
-    <div class="section-eyebrow fade-up" style="text-align:center;">How We Work</div>
-    <h2 class="section-title fade-up" style="text-align:center;">Our Process</h2>
-    <div class="process-steps">
-      <div class="process-step fade-up">
-        <div class="step-num">1</div>
-        <div class="step-title">Discover &amp; Assess</div>
-        <p class="step-desc">We learn your environment, goals and constraints before recommending anything.</p>
-      </div>
-      <div class="process-step fade-up">
-        <div class="step-num">2</div>
-        <div class="step-title">Design &amp; Implement</div>
-        <p class="step-desc">We build and deploy the right-sized solution, on time and on scope.</p>
-      </div>
-      <div class="process-step fade-up">
-        <div class="step-num">3</div>
-        <div class="step-title">Support &amp; Optimise</div>
-        <p class="step-desc">We stay engaged — monitoring, refining and scaling as your business grows.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="container">
-    <h2 class="cta-title fade-up">Let's Build Something<br>Reliable Together.</h2>
-    <p class="cta-sub fade-up">Get in touch to discuss your IT setup, migration or support needs.</p>
-    <a href="mailto:info@waiveritsolutions.com.au" class="cta-email fade-up">
-      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-      info@waiveritsolutions.com.au
-    </a>
-  </div>
-</section>
-
 <footer>
   <div class="footer-logo">WAIVER <span>IT Solutions</span></div>
-  <div class="footer-copy">&copy; 2025 Waiver IT Solutions. All rights reserved.</div>
+  <div class="footer-copy">&copy; 2026 Waiver IT Solutions. All rights reserved.</div>
   <div class="footer-tagline">Innovate • Automate • Consult</div>
 </footer>
 
